@@ -66,13 +66,17 @@ streamlit run app/streamlit_app.py
 - **Fine-tuning** unfreezes only the last 30 backbone layers, BatchNorm kept frozen, at lr=1e-5.
 
 ## Known limitations / next steps
+### Dataset and Evaluation Limitations
 
-- The demo dataset is synthetic; its ~97-100% scores say nothing about real authenticity.
-- Add probability calibration (temperature scaling / isotonic) on the validation set before showing any "confidence".
-- Check for shortcut learning (backgrounds, watermarks, photo style) using Grad-CAM across many samples.
-- Evaluate by brand/product category and by capture conditions; report per-group metrics.
-- Possible extensions: multi-view inputs (stitching/hardware close-ups), ROC/PR curves, threshold selection, Docker deploy.
-
+- The project includes the Goldnet dataset for product authenticity
+  screening and model evaluation.
+- A synthetic demo dataset is also provided for application testing.
+- Model performance depends on the quality, diversity, and
+  representativeness of the training data.
+- High evaluation scores on a limited dataset do not guarantee
+  reliable counterfeit detection in real-world scenarios.
+- Further validation across different brands, product categories,
+  and image capture conditions is required.
 ## Structure
 
 ```

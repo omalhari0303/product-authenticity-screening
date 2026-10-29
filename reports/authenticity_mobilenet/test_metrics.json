@@ -1,0 +1,47 @@
+{
+  "accuracy": 0.778816199376947,
+  "macro_precision": 0.7837591240875912,
+  "macro_recall": 0.7777432631824183,
+  "macro_f1": 0.7773555414448298,
+  "n_samples": 321,
+  "confusion_matrix": [
+    [
+      138,
+      25
+    ],
+    [
+      46,
+      112
+    ]
+  ],
+  "report": {
+    "counterfeit": {
+      "precision": 0.75,
+      "recall": 0.8466257668711656,
+      "f1-score": 0.7953890489913544,
+      "support": 163.0
+    },
+    "genuine": {
+      "precision": 0.8175182481751825,
+      "recall": 0.7088607594936709,
+      "f1-score": 0.7593220338983051,
+      "support": 158.0
+    },
+    "accuracy": 0.778816199376947,
+    "macro avg": {
+      "precision": 0.7837591240875912,
+      "recall": 0.7777432631824183,
+      "f1-score": 0.7773555414448298,
+      "support": 321.0
+    },
+    "weighted avg": {
+      "precision": 0.7832332810332674,
+      "recall": 0.778816199376947,
+      "f1-score": 0.7776364372010062,
+      "support": 321.0
+    }
+  },
+  "counterfeit_precision": 0.75,
+  "counterfeit_recall": 0.8466257668711656,
+  "counterfeit_f1": 0.7953890489913544
+}
